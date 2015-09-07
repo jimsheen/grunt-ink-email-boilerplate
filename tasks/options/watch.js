@@ -10,7 +10,7 @@ module.exports = {
         }
     },
     css: {
-        files: ['dev/css/*.scss'],
+        files: ['dev/sass/*.scss'],
         tasks: ['sass', 'wiredep'],
         options: {
             spawn: false,

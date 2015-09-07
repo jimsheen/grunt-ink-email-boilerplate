@@ -51,7 +51,6 @@ module.exports = function(grunt) {
     //grunt.log.write(JSON.stringify(grunt.file.readJSON('package.json')));
 
     grunt.loadNpmTasks('grunt-wiredep');
-    grunt.loadNpmTasks('grunt-processhtml');
 
     // Load tasks from the tasks folder
     grunt.loadTasks('tasks');
@@ -109,8 +108,6 @@ module.exports = function(grunt) {
     //     }
     //   }
     // });
-
-    grunt.loadNpmTasks('grunt-version-copy-bower-components');
 
     require('load-grunt-tasks')(grunt);
 

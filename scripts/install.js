@@ -20,11 +20,22 @@ fs.outputFile('dev/js/global.js', '/* Custom JS */', function(err) {
 
 })
 
-fs.outputFile("dev/css/global.scss", '/* Custom SASS */', function(err) {
+fs.outputFile("dev/sass/global.scss", '/* Custom SASS */', function(err) {
     if (err) {
         return console.log(err);
     }
 });
+
+fs.ensureDir('dev/css/', function(err) {
+    if (err) {
+        return console.log(err);
+    }
+})
+fs.ensureDir('dev/img/', function(err) {
+    if (err) {
+        return console.log(err);
+    }
+})
 
 fs.ensureDir('build/css/', function(err) {
     if (err) {

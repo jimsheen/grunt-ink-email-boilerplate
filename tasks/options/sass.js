@@ -5,7 +5,7 @@ module.exports = {
             style: 'expanded'
         },
         files: {
-            'dev/css/global.css': 'dev/css/global.scss'
+            'dev/css/global.css': 'dev/sass/global.scss'
         }
     },
     // build: {
