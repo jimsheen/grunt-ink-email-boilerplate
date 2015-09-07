@@ -16,7 +16,7 @@ module.exports = {
     css: {
         src: [
             'bower_components/**/*.css',
-            'dev/css/build/global.css'
+            'dev/css/global.css'
         ],
         dest: 'build/css/global.css'
     }
