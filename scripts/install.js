@@ -1,9 +1,5 @@
 var fs = require('fs-extra')
 
-fs.mkdirs('css/', function(err) {
-    if (err) console.error(err)
-});
-
 bowercc_config = JSON.stringify({
     "scripts": {
         "postinstall": "wiredep -s dev/index.html"
