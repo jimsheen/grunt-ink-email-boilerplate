@@ -7,7 +7,7 @@ bowercc_config = JSON.stringify({
 });
 
 bower_config = JSON.stringify({
-    "name": "jims-wordpress-setup",
+    "name": "jims-project-setup",
     "version": "1.0.0",
     "authors": [
         "Jim Sheen"

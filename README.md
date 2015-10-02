@@ -7,10 +7,10 @@ cd 'directory' <br>
 git clone this repo<br>
 npm init<br>
 npm install <br>
-bower init <br>
-grunt dev  <br>
 </code> 
 </pre>
+
+<p>npm install now creates bower.json file and runs grunt dev after install </p>
 
 <h2>Add a bower package project</h2>
 <p>Automatically adds &lt;script&gt; and &lt;link&gt; tags to index.html using  <a href="https://github.com/stephenplusplus/grunt-wiredep">grunt-wiredep</a>
