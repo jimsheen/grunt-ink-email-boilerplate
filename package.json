@@ -25,11 +25,12 @@
   "dependencies": {
     "load-grunt-tasks": "~2.0.0"
   },
-  "scripts": {
-    "install": "node scripts/install.js"
+ "scripts": {
+    "install": "node scripts/install.js && grunt dev",
+    "watch": "grunt watch"
   },
   "main": "index.js",
-  "author": "",
+  "author": "Jim Sheen - http://www.sheendigitaldesign.com",
   "license": "ISC",
-  "description": ""
+  "description": "Jim's Grunt Bower Boilerplate for Initial Project Setup"
 }
