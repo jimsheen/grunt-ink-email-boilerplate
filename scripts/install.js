@@ -7,20 +7,29 @@ bowercc_config = JSON.stringify({
 });
 
 bower_config = JSON.stringify({
-    "name": "jims-project-setup",
-    "version": "1.0.0",
-    "authors": [
-        "Jim Sheen"
-    ],
-    "license": "MIT",
-    "ignore": [
-        "**/.*",
-        "node_modules",
-        "bower_components",
-        "test",
-        "tests"
-    ]
-});
+  "name": "jims-project-setup",
+  "version": "1.0.0",
+  "authors": [
+    "Jim Sheen"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "overrides": {
+    "foundation": {
+      "main": [
+        "css/foundation.css",
+        "js/foundation.js"
+      ]
+    }
+  }
+}
+);
 
 
 fs.outputFile("bower.json", bower_config, function(err) {

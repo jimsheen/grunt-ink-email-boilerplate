@@ -1,0 +1,203 @@
+/* Custom SASS */
+
+@import "includes/mixins.scss";
+@import "includes/default.scss";
+.menu {
+    position: relative;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin: 25px;
+}
+
+.menu span {
+    margin: 0 auto;
+    position: relative;
+    top: 12px;
+}
+
+.menu span:before,
+.menu span:after {
+    position: absolute;
+    content: '';
+}
+
+.menu span,
+.menu span:before,
+.menu span:after {
+    width: 30px;
+    height: 6px;
+    background-color: white;
+    display: block;
+}
+
+.menu span:before {
+    margin-top: -12px;
+}
+
+.menu span:after {
+    margin-top: 12px;
+}
+
+
+/* example 5 */
+
+.example5 span {
+    -webkit-transition-duration: 0s;
+    transition-duration: 0s;
+    -webkit-transition-delay: 0.2s;
+    transition-delay: 0.2s;
+}
+
+.example5.active span {
+    background-color: rgba(0, 0, 0, 0.0);
+    -webkit-transition-delay: 0.2s;
+    transition-delay: 0.2s;
+}
+
+.example5 span:before {
+    -webkit-transition-property: margin, -webkit-transform;
+    transition-property: margin, transform;
+    -webkit-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+    -webkit-transition-delay: 0.2s, 0s;
+    transition-delay: 0.2s, 0s;
+}
+
+.example5.active span:before {
+    margin-top: 0;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    -webkit-transition-delay: 0s, 0.2s;
+    transition-delay: 0s, 0.2s;
+}
+
+.example5 span:after {
+    -webkit-transition-property: margin, -webkit-transform;
+    transition-property: margin, transform;
+    -webkit-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+    -webkit-transition-delay: 0.2s, 0s;
+    transition-delay: 0.2s, 0s;
+}
+
+.example5.active span:after {
+    margin-top: 0;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    -webkit-transition-delay: 0s, 0.2s;
+    transition-delay: 0s, 0.2s;
+}
+
+body {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e14f5c+0,2d376e+100 */
+    background: rgb(225, 79, 92);
+    /* Old browsers */
+    background: -moz-linear-gradient(-45deg, rgba(225, 79, 92, 1) 0%, rgba(45, 55, 110, 1) 100%);
+    /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, rgba(225, 79, 92, 1)), color-stop(100%, rgba(45, 55, 110, 1)));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(-45deg, rgba(225, 79, 92, 1) 0%, rgba(45, 55, 110, 1) 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(-45deg, rgba(225, 79, 92, 1) 0%, rgba(45, 55, 110, 1) 100%);
+    /* Opera 11.10+ */
+    background: -ms-linear-gradient(-45deg, rgba(225, 79, 92, 1) 0%, rgba(45, 55, 110, 1) 100%);
+    /* IE10+ */
+    background: linear-gradient(135deg, rgba(225, 79, 92, 1) 0%, rgba(45, 55, 110, 1) 100%);
+    /* W3C */
+}
+
+body {
+    color: white;
+    p {
+        color: white;
+    }
+    overflow:hidden;
+}
+
+.wrapContainer {
+    height: 100%;
+    overflow-x: hidden;
+}
+
+.wrap {
+    position: relative;
+    width: 200%;
+    height: 100%;
+    overflow: hidden;
+}
+
+nav {
+    width: 50%;
+    float: right;
+    position: absolute;
+    left: 50%;
+    @include transition(all, 0.4s, cubic-bezier(0.175, 0.885, 0.32, 1.275));
+    height: 100%;
+    &.active {
+        @include transition(all, 0.4s, cubic-bezier(0.175, 0.885, 0.32, 1.275));
+        left: 0%;
+    }
+    .navBox {
+        height: 80%;
+        ul.navMenu {
+            display: inline-block;
+            list-style: none;
+            color: white;
+            text-transform: uppercase;
+            margin: 0;
+            li {
+                margin: 0;
+                list-style: none;
+                a {
+                    color: white;
+                    text-transform: uppercase;
+                    padding: 10px 0;
+                    display: inline-block;
+                    font-size: 1.4em;
+                    &:hover {
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
+}
+
+main {
+    width: 50%;
+    float: left;
+    left: 0;
+    position: absolute;
+    @include transition(all, 0.4s, cubic-bezier(0.175, 0.885, 0.32, 1.275));
+    &.active {
+        left: -50%;
+        @include transition(all, 0.4s, cubic-bezier(0.175, 0.885, 0.32, 1.275));
+    }
+    background-image:url(../img/bg1.png);
+    background-position: 60px 20px;
+    background-size: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+}
+
+.mainLogo {
+    margin-bottom: 40px;
+}
+
+.fullHeight {
+    height: 100%;
+    .columns {
+        height: 100%;
+    }
+}
+
+.border {
+    border: 1px solid black;
+    &.borderWhite {
+        border-color: white;
+    }
+    &.borderThick {
+        border-width: 5px;
+    }
+}
