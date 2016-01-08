@@ -1,7 +1,9 @@
 /* Custom SASS */
 
-@import "includes/mixins.scss";
+@import "includes/flexbox.scss";
 @import "includes/default.scss";
+@import "includes/media.scss";
+
 .menu {
     position: relative;
     display: inline-block;
@@ -40,22 +42,22 @@
 }
 
 
-/* example 5 */
+/* menu icon animation */
 
-.example5 span {
+.menuIcon span {
     -webkit-transition-duration: 0s;
     transition-duration: 0s;
     -webkit-transition-delay: 0.2s;
     transition-delay: 0.2s;
 }
 
-.example5.active span {
+.menuIcon.active span {
     background-color: rgba(0, 0, 0, 0.0);
     -webkit-transition-delay: 0.2s;
     transition-delay: 0.2s;
 }
 
-.example5 span:before {
+.menuIcon span:before {
     -webkit-transition-property: margin, -webkit-transform;
     transition-property: margin, transform;
     -webkit-transition-duration: 0.2s;
@@ -64,7 +66,7 @@
     transition-delay: 0.2s, 0s;
 }
 
-.example5.active span:before {
+.menuIcon.active span:before {
     margin-top: 0;
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
@@ -72,7 +74,7 @@
     transition-delay: 0s, 0.2s;
 }
 
-.example5 span:after {
+.menuIcon span:after {
     -webkit-transition-property: margin, -webkit-transform;
     transition-property: margin, transform;
     -webkit-transition-duration: 0.2s;
@@ -81,7 +83,7 @@
     transition-delay: 0.2s, 0s;
 }
 
-.example5.active span:after {
+.menuIcon.active span:after {
     margin-top: 0;
     -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg);
