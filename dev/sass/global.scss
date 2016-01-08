@@ -1,7 +1,9 @@
 /* Custom SASS */
 
-@import "includes/mixins.scss";
+@import "includes/flexbox.scss";
 @import "includes/default.scss";
+@import "includes/media.scss";
+
 .menu {
     position: relative;
     display: inline-block;
