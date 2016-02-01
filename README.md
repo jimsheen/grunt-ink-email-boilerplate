@@ -1,5 +1,5 @@
-<h1>Jim's Grunt Bower Boilerplate for Initial Project Setup</h1>
-
+<h1>Jim's Grunt Ink Boilerplate for Email Dev</h1>
+<!-- 
 <h2>How to set up</h2>
 <pre>
 <code>
@@ -59,3 +59,4 @@ Copy bower_components to folder (faster than recursive lookup using grunt-contri
 Replace string in files
 <a href="https://github.com/outaTiME/grunt-replace">grunt-replace</a>
 </p>
+ -->
