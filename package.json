@@ -1,5 +1,5 @@
 {
-  "name": "jims-project-setup",
+  "name": "order-confirmation-email",
   "version": "0.1.0",
   "devDependencies": {
     "fs-extra": "^0.24.0",
@@ -25,12 +25,20 @@
   "dependencies": {
     "load-grunt-tasks": "~2.0.0"
   },
- "scripts": {
-    "install": "node scripts/install.js && grunt dev",
+  "scripts": {
+    "install": "",
     "watch": "grunt watch"
   },
   "main": "index.js",
   "author": "Jim Sheen - http://www.sheendigitaldesign.com",
   "license": "ISC",
-  "description": "Jim's Grunt Bower Boilerplate for Initial Project Setup"
+  "description": "Jim's Grunt Bower Boilerplate for Initial Project Setup",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jimsheen/jims-grunt-bower-boilerplate.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jimsheen/jims-grunt-bower-boilerplate/issues"
+  },
+  "homepage": "https://github.com/jimsheen/jims-grunt-bower-boilerplate#readme"
 }

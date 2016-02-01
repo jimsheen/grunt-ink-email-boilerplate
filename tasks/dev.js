@@ -1,3 +1,3 @@
 module.exports = function(grunt) {
-  grunt.registerTask('dev', ['connect', 'sass', 'watch']);
+  grunt.registerTask('dev', ['sass', 'watch']);
 };

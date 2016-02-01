@@ -11,7 +11,7 @@ module.exports = {
     },
     css: {
         files: ['dev/sass/*.scss'],
-        tasks: ['sass', 'wiredep'],
+        tasks: ['sass', 'concat:dev'],
         options: {
             spawn: false,
         }

@@ -19,5 +19,12 @@ module.exports = {
             'dev/css/global.css'
         ],
         dest: 'build/css/global.css'
+    },
+    dev: {
+        src: [
+            'dev/**/lib/ink.css',
+            'dev/css/global.css'
+        ],
+        dest: 'dev/css/global.css'
     }
 }
