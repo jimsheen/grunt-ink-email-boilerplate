@@ -1,4 +1,4 @@
-/*! order-confirmation-email - v0.1.0 - 2016-02-01 *//* Client-specific Styles and Reset */
+/*! order-confirmation-email - v0.1.0 - 2016-02-02 *//* Client-specific Styles and Reset */
 
 #outlook a {
   padding:0;
@@ -705,6 +705,10 @@ body.outlook p {
 
 header {
   color: red;
+}
+
+.body {
+  background: black;
 }
 
 /*# sourceMappingURL=global.css.map */

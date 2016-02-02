@@ -1,1 +1,0 @@
-/*! order-confirmation-email - v0.1.0 - 2016-02-01 */
