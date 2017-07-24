@@ -1,4 +1,4 @@
-/*! order-confirmation-email - v0.1.0 - 2016-02-02 *//* Client-specific Styles and Reset */
+/*! jims-grunt-bower-boilerplate - v0.1.0 - 2017-07-24 *//* Client-specific Styles and Reset */
 
 #outlook a {
   padding:0;
@@ -703,12 +703,9 @@ body.outlook p {
   }
 }
 
-header {
-  color: red;
-}
-
-.body {
-  background: black;
+@import url(lib/ink.css);
+h1 {
+  font-size: 48px;
 }
 
 /*# sourceMappingURL=global.css.map */
